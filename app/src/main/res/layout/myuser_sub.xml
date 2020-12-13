@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/background_mental"
+    tools:showIn="@layout/activity_main">
+
+
+    <ImageView
+        android:id="@+id/userImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="0.30"/>
+
+
+    <TextView
+        android:id="@+id/username1"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#30375C"
+        android:backgroundTint="@color/fui_buttonShadow"
+        android:layout_marginBottom="10dp"
+        />
+
+    <Button
+        android:id="@+id/profilepic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/color1"
+        android:text="Edit your profile pic" />
+
+
+    <Button
+        android:id="@+id/history"
+        android:text="Alarm History"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/color1"
+        android:layout_marginBottom="10dp"
+        />
+
+    <Button
+        android:id="@+id/createAlarm"
+        android:text="Create a new alarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:backgroundTint="@color/color2"
+        android:layout_marginBottom="10dp"
+        />
+    <Button
+        android:id="@+id/loggedout"
+        android:text="Log out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#808080"
+        android:layout_marginBottom="10dp"
+        />
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background_mental"
+    tools:context=".EditProfilePicActivity">
+    <ImageView
+        android:id="@+id/imageViewSelected"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="200dp" />
+
+
+    <Button
+        android:id="@+id/buttonSelectImage"
+        android:text="select image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="@color/color2"/>
+
+
+    <EditText
+        android:id="@+id/editTextNameEntry"
+        android:hint="Label"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background= "@drawable/edit_text_box"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/buttonOK"
+        android:text="OK"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/color2"/>
+
+</LinearLayout>

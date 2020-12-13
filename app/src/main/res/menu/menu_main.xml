@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.alarmproject.MainActivity">
+    <item
+        android:id="@+id/menuCreateNewAlarm"
+        android:orderInCategory="100"
+        android:title="Log In"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menuL0gout"
+        android:orderInCategory="110"
+        android:title="Log Out"
+        android:onClick="logout"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_check_out_leaderBoard"
+        android:orderInCategory="120"
+        android:title="Leaderboard"
+        app:showAsAction="never" />
+</menu>

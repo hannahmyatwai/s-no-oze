@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login">
+
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:text="LEADERBOARD"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:textColor="#30375C"
+        android:backgroundTint="@color/fui_buttonShadow"
+        android:layout_marginBottom="10dp"
+        />
+
+    <TextView
+        android:id="@+id/user01"
+        android:text = "Hannah                                              1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="start|bottom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:background= "@drawable/edit_text_box"
+        />
+
+    <TextView
+        android:id="@+id/user02"
+        android:text = "Stephanie                                          2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="start|bottom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:background= "@drawable/edit_text_box_1"
+        />
+    <TextView
+        android:id="@+id/user03"
+        android:text = "Deeni                                                  3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="start|bottom"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:background= "@drawable/edit_text_box_2"
+        />
+
+
+
+
+</LinearLayout>

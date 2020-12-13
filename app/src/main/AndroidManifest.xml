@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.alarmproject">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AlarmProject">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"
+            android:theme="@style/Theme.AlarmProject.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+<!--        include this for notification-->
+<!--        <activity-->
+<!--            android:name=".Test"-->
+<!--            android:launchMode="singleTask"-->
+<!--            android:taskAffinity=""-->
+<!--            android:excludeFromRecents="true">-->
+<!--        </activity>-->
+
+        <activity android:name=".CreateAlarmActivity"
+            android:parentActivityName=".MainActivity"
+            android:label="Set a new alarm"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"></activity>
+        <activity android:name=".AccountActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity"
+            android:configChanges="orientation|keyboardHidden"></activity>
+
+        <activity android:name=".LoginPageActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:parentActivityName=".AccountActivity"
+            android:configChanges="orientation|keyboardHidden"></activity>
+
+
+        <activity android:name=".SignUpPageActivity"
+            android:label=""
+            android:parentActivityName=".AccountActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity android:name=".EditProfilePicActivity"
+            android:label=""
+            android:parentActivityName=".MyAccountAcitivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity android:name=".MentalGameActivity"
+            android:label = ""
+            android:parentActivityName= ".SelectGameActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity android:name=".MyAccountAcitivity"
+        android:label=""
+        android:parentActivityName=".MainActivity"
+        android:screenOrientation="portrait"
+        android:configChanges="orientation|keyboardHidden"/>
+        <activity android:name=".SelectGameActivity"
+            android:label=""
+            android:parentActivityName=".CreateAlarmActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity android:name=".VisualGameActivity"
+            android:label = ""
+            android:parentActivityName=".SelectGameActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity android:name=".HistoryActivity"
+            android:label="My Alarm History"
+            android:parentActivityName=".MyAccountAcitivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"/>
+        <activity android:name=".LeaderboardActivity"
+            android:label=""
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|keyboardHidden"/>
+
+
+
+        <receiver android:name=".AlarmReceiver"/>
+        <service android:name=".RingtonePlayingService"
+            android:enabled="true" />
+        <receiver android:name=".AlarmReceiver"/>
+
+        <service android:name=".RingtonePlayingService"
+            android:enabled="true">
+        </service>
+
+    </application>
+
+</manifest>
