@@ -60,7 +60,7 @@ public class MentalGameActivity extends AppCompatActivity {
                     startActivityForResult(intentNew, 1);
                 }else{
                     int data = 0;
-                    Toast.makeText(MentalGameActivity.this, "Sorry! Please try again!"+answerByUser, Toast.LENGTH_LONG).show();
+                    Toast.makeText(MentalGameActivity.this, "Sorry! Please try again!", Toast.LENGTH_LONG).show();
                     Intent intentNew = new Intent(MentalGameActivity.this, CreateAlarmActivity.class);
                     intentNew.putExtra("data", data);
                     startActivityForResult(intentNew, 1);
