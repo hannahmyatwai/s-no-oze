@@ -1,4 +1,4 @@
-# Alarm2
+s(NO)oze
  
 s(NO)oze is an android alarm app that aims to wake users up without snoozing their alarms.
 
